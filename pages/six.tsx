@@ -125,7 +125,7 @@ export default function Six() {
       {showChaaeModal ? (
         <>
           <CustomModal
-            title={"최애"}
+            title={"차애"}
             setShowModal={setShowChaaeModal}
             setMemberImg={setChaaeMemberImg}
             setMemberName={setChaaeMemberName}
