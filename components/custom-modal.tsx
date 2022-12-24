@@ -29,7 +29,7 @@ export default function CustomModal({
               <span className="mx-3 text-white bg-nct px-3 py-1.5 rounded-2xl text-sm font-bold">
                 {title}
               </span>
-              <div className="grid grid-cols-5">
+              <div className="grid grid-cols-3">
                 {unit.map((value, i) => (
                   <button
                     key={i}
