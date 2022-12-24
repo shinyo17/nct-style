@@ -18,18 +18,30 @@ export default function Home() {
           <p>(다른 유닛도 NCT 전체도 천천히 추가할게요...)</p>
         </div>
       </div>
-      <div className="flex space-x-3">
+      <div className="grid grid-cols-2 space-x-3 items-center justify-center">
         <Link
-          href="/six"
-          className="mt-5 bg-nct hover:bg-nct text-white py-2 px-4 border border-transparent rounded-3xl shadow-sm text-sm font-semibold focus:ring-2 focus:ring-offset-2 focus:ring-nct focus:outline-none"
+          href="/six/dream"
+          className="text-center mt-5 bg-nct hover:bg-nct text-white py-2 px-4 border border-transparent rounded-3xl shadow-sm text-sm font-semibold focus:ring-2 focus:ring-offset-2 focus:ring-nct focus:outline-none"
         >
           6문항 버전 (드림)
         </Link>
         <Link
-          href="/eight"
-          className="mt-5 bg-nct hover:bg-nct text-white py-2 px-4 border border-transparent rounded-3xl shadow-sm text-sm font-semibold focus:ring-2 focus:ring-offset-2 focus:ring-nct focus:outline-none"
+          href="/eight/dream"
+          className="text-center mt-5 bg-nct hover:bg-nct text-white py-2 px-4 border border-transparent rounded-3xl shadow-sm text-sm font-semibold focus:ring-2 focus:ring-offset-2 focus:ring-nct focus:outline-none"
         >
           8문항 버전 (드림)
+        </Link>
+        <Link
+          href="/six/127"
+          className="text-center mt-5 bg-nct hover:bg-nct text-white py-2 px-4 border border-transparent rounded-3xl shadow-sm text-sm font-semibold focus:ring-2 focus:ring-offset-2 focus:ring-nct focus:outline-none"
+        >
+          6문항 버전 (127)
+        </Link>
+        <Link
+          href="/eight/127"
+          className="text-center mt-5 bg-nct hover:bg-nct text-white py-2 px-4 border border-transparent rounded-3xl shadow-sm text-sm font-semibold focus:ring-2 focus:ring-offset-2 focus:ring-nct focus:outline-none"
+        >
+          8문항 버전 (127)
         </Link>
       </div>
     </div>
