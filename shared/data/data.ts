@@ -85,8 +85,62 @@ export const NCT127: Artist[] = [
         img: "nct-127-9.JPG",
     },
     {
+        id: 10,
+        name: "해찬",
+        img: "nct-127-10.JPG",
+    },
+];
+
+
+export const NCT2022: Artist[] = [
+    {
+        id: 1,
+        name: "태일",
+        img: "nct-1.JPG",
+    },
+    {
+        id: 2,
+        name: "쟈니",
+        img: "nct-2.JPG",
+    },
+    {
+        id: 3,
+        name: "태용",
+        img: "nct-3.JPG",
+    },
+    {
+        id: 4,
+        name: "유타",
+        img: "nct-4.JPG",
+    },
+    {
+        id: 5,
+        name: "도영",
+        img: "nct-5.JPG",
+    },
+    {
+        id: 6,
+        name: "재현",
+        img: "nct-6.JPG",
+    },
+    {
+        id: 7,
+        name: "윈윈",
+        img: "nct-7.JPG",
+    },
+    {
+        id: 8,
+        name: "정우",
+        img: "nct-8.JPG",
+    },
+    {
+        id: 9,
+        name: "마크",
+        img: "nct-9.JPG",
+    },
+    {
         id: 8,
         name: "해찬",
-        img: "nct-127-8.JPG",
+        img: "nct-8.JPG",
     },
 ];
