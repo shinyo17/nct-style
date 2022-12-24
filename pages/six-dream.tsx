@@ -4,8 +4,9 @@ import { useState } from "react";
 import { saveAs } from "file-saver";
 import CustomModal from "../components/custom-modal";
 import SelectButton from "../components/select-button";
+import { Artist } from "../shared/interfaces/artist";
 
-export default function Six() {
+export default function SixDream() {
   const [showChoiaeModal, setShowChoiaeModal] = useState(false);
   const [choiaeMemberImg, setChoiaeMemberImg] = useState("");
   const [choiaeMemberName, setChoiaeMemberName] = useState("");
@@ -29,6 +30,8 @@ export default function Six() {
   const [showChildModal, setShowChildModal] = useState(false);
   const [childMemberImg, setChildMemberImg] = useState("");
   const [childMemberName, setChildMemberName] = useState("");
+
+
 
   const handleImageDownload = () => {
     try {
@@ -112,7 +115,7 @@ export default function Six() {
           다운로드
         </button>
       </div>
-      {showChoiaeModal ? (
+      {/* {showChoiaeModal ? (
         <>
           <CustomModal
             title={"최애"}
@@ -171,7 +174,7 @@ export default function Six() {
             setMemberName={setChildMemberName}
           ></CustomModal>
         </>
-      ) : null}
+      ) : null} */}
     </div>
   );
 }

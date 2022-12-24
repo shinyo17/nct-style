@@ -1,10 +1,12 @@
 import { useState, Dispatch, SetStateAction } from "react";
+import { Artist } from "../shared/interfaces/artist";
 
 interface ModalProps {
   title: string;
   setShowModal: Dispatch<SetStateAction<boolean>>;
   setMemberImg: Dispatch<SetStateAction<string>>;
   setMemberName: Dispatch<SetStateAction<string>>;
+  unit: Artist[];
 }
 
 export default function CustomModal({
@@ -12,6 +14,7 @@ export default function CustomModal({
   setShowModal,
   setMemberImg,
   setMemberName,
+  unit,
 }: ModalProps) {
   return (
     <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -26,30 +29,22 @@ export default function CustomModal({
               <span className="mx-3 text-white bg-nct px-3 py-1.5 rounded-2xl text-sm font-bold">
                 {title}
               </span>
-              <div className="grid grid-cols-3">
-                {[
-                  [1, "마크"],
-                  [2, "런쥔"],
-                  [3, "제노"],
-                  [4, "해찬"],
-                  [5, "재민"],
-                  [6, "천러"],
-                  [7, "지성"],
-                ].map((value, i) => (
+              <div className="grid grid-cols-5">
+                {unit.map((value, i) => (
                   <button
                     key={i}
                     onClick={() => {
                       setShowModal(false);
-                      setMemberImg(`/images/nct-dream-${value[0]}.JPG`);
-                      setMemberName(`${value[1]}`);
+                      setMemberImg(`/images/${value.img}`);
+                      setMemberName(`${value.name}`);
                     }}
                     className="flex flex-col items-center p-4 space-y-2 cursor-pointer justify-center"
                   >
                     <img
                       className="object-cover object-center rounded-md aspect-square"
-                      src={`/images/nct-dream-${value[0]}.JPG`}
+                      src={`/images/${value.img}`}
                     />
-                    <p className="text-gray-900 text-sm font-semibold">{`${value[1]}`}</p>
+                    <p className="text-gray-900 text-sm font-semibold">{`${value.name}`}</p>
                   </button>
                 ))}
               </div>

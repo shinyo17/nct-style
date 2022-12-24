@@ -5,7 +5,7 @@ import { saveAs } from "file-saver";
 import CustomModal from "../components/custom-modal";
 import SelectButton from "../components/select-button";
 
-export default function Eight() {
+export default function EightDream() {
   const [showChoiaeModal, setShowChoiaeModal] = useState(false);
   const [choiaeMemberImg, setChoiaeMemberImg] = useState("");
   const [choiaeMemberName, setChoiaeMemberName] = useState("");
@@ -132,7 +132,7 @@ export default function Eight() {
           다운로드
         </button>
       </div>
-      {showChoiaeModal ? (
+      {/* {showChoiaeModal ? (
         <>
           <CustomModal
             title={"최애"}
@@ -222,7 +222,7 @@ export default function Eight() {
             setMemberName={setChildMemberName}
           ></CustomModal>
         </>
-      ) : null}
+      ) : null} */}
     </div>
   );
 }
